@@ -292,6 +292,7 @@ img{
 }
 .input{
     display: inline-grid;
+    justify-content: center;
     align-items: center;
     text-align: center;
     grid-template-columns: 50% 40%;
@@ -317,6 +318,9 @@ img{
     max-width: 70%;
     margin: 1rem auto;
     overflow: auto;
+    position: relative;
+    left: 5%;
+    
 }
 
 .footer,
@@ -326,6 +330,7 @@ img{
 }
 .footer p{
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 .footer .footer-col{
     display: grid;
@@ -335,4 +340,145 @@ img{
 
 .footer li{
     line-height: 2.4;
+}
+
+@media(max-width:780px){
+    *{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .showcase{
+        width: 100%;
+        height: auto;
+    }
+    .showcase-top img{
+        transform: translate(0);
+        left: 0;
+        top:0;
+        width: 125px;
+    }
+    .showcase-top a{
+        
+        top: 0;
+        right: 0;
+        transform: translate(0);
+        margin-top: 1.7rem;
+        width: 80px;
+    }
+    .btn{
+        font-size: 0.7rem;
+    }
+    .showcase-content{
+        margin-top: 4.5rem;
+    }
+    .showcase-content h1{
+        font-size: 1.5rem;
+    }
+    .showcase-content h2{
+        font-size: 0.9rem;
+    }
+    .showcase-content p{
+        font-size: 0.6rem;
+    }
+    .showcase-content input{
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 200px;
+        height: 2.5rem;
+        
+    }
+    .mid{
+        padding-left: 20px;
+        margin: 7px;
+        width: 100%;
+    }
+    .showcase-content .btn-lg{
+        font-size: 0.6rem;
+        height: 2.5rem;
+        padding: 0.8rem 1rem;
+    }
+    .card-0,.card-1,.card-2,.card-3{
+        border-top: 5px rgb(69, 69, 69) solid;
+        padding: 10px 20px 30px;
+    }
+    .style-card h1{
+        font-size: 1rem;
+        padding: 0.4rem;
+        padding-left: 0;
+    }
+    .style-card h3{
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    .desc-0{
+        padding-left: 30px;
+    }
+    .desc-1{
+        padding-left: 20px;
+    }
+    .desc-2{
+        padding-left: 30px;
+    }
+    .desc-3{
+        padding-left: 30px;
+       
+    }
+    img{
+        object-fit: cover;
+    }
+    .card-3 video{
+        top: -16px;
+        left: 26px;
+    }
+    .card-1{
+        grid-template-columns: 50% 50%;
+    }
+    .card-3{
+        grid-template-columns: 60% 45%;
+        
+    }
+
+    .faq h1{
+        font-size: 1.5rem;
+        padding-bottom: 25px;
+    }
+    .faq p{
+        font-size: 0.7rem;
+        padding-top: 20px;
+    }
+    .que li{
+        padding: 10px 15px;
+        font-size: 0.8rem;
+        width: 75%;
+    }
+    .input input{
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 200px;
+        height: 2.5rem;
+    }
+    .input button{
+        font-size: 0.9rem;
+        height: 2.5rem;
+        padding: 0.8rem 1rem;
+        width: 120px;
+        color: #fff;
+    }
+    .input{
+        padding-left: 20px;
+        margin: 7px;
+        width: 100%;
+    }
+    .footer p{
+        font-size: 0.9rem;
+        color: #fff; 
+    }
+     .footer a{
+        font-size: 0.4rem;
+    }
+    .footer li{
+        line-height: 0.4;
+        padding: 5px;
+    }
 }
